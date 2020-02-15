@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>PHP e Banco de Dados</title>
+	</head>
+	<body>
+
+		<center>
+			<h1>Formulário-Escola</h1>
+			<br>
+			<br>
+			<fieldset style="height: auto;width: 600px;">
+			<form method="post" action="php/cadastrar.php"><br>
+
+				<label>Nome : <input type="text" name="nome" required=""></label><br><br>
+				<label>Data de Nascimento : <input type="date" name="d_n" required="" ></label><br><br>
+				<label>Data de ingresso na Escola : <input type="date" name="d_i"required="" ></label><br><br>
+				<label>Idade : <input type="number" name="idade" required="" ></label><br><br>
+				<label>Salário : <input type="text" name="sal" required="" ></label><br><br>
+				<label>Endereço : <input type="text" name="end" required="" ></label><br><br>
+				<label><h2>Áreas de Interesse : </h2></label><br><br>
+				<label><input type="checkbox" name="aux[]" value="BD">Banco de Dados</label>
+				<Label><input type="checkbox" name="aux[]" value="Desktop">Desktop<br><br></label>
+				<Label><input type="checkbox" name="aux[]" value="Web">WEB</label>
+				<Label><input type="checkbox" name="aux[]" value="Suporte">Suporte<br><br></label>
+				<Label><input type="checkbox" name="aux[]" value="SI">Segurança da Informação</label>
+				<Label>	<input type="checkbox" name="aux[]" value="Design">Design<br><br></label>
+
+				<input type="submit" name="Enviar"><br>			
+
+			</form>
+
+			</fieldset>
+		</center>
+	</body>
+</html>
